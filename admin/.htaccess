@@ -1,0 +1,4 @@
+options All -Indexes
+RewriteEngine On
+RewriteRule ^([-a-z]*)$ index.php?include=$1 [L]
+RewriteRule ^([-a-z]*)_error=([a-zA-Z]*)$ index.php?include=$1&gagal=$2 [L]
